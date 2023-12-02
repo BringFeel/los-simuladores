@@ -3269,6 +3269,7 @@ body.is-mobile.landing #footer {
 }
 ::-webkit-scrollbar-thumb {
     background: #019D00;
+    border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
     background: #004d00;
