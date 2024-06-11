@@ -1,5 +1,5 @@
 function leerJSON() {
-    fetch('caps.json')
+    fetch('https://los-simuladores.bringfeel.com.ar/assets/json/caps.json')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Error al leer el archivo JSON');
