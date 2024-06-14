@@ -1,4 +1,4 @@
-function leerJSON() {
+    function leerJSON() {
     fetch('https://los-simuladores.bringfeel.com.ar/assets/json/caps.json')
         .then(response => {
             if (!response.ok) {
@@ -19,9 +19,8 @@ function leerJSON() {
                 return
             }
 
-            document.getElementById('episodie').innerText = `${data[temp][cap].capnumb}`;
-            document.getElementById('capTitle').innerText = `${data[temp][cap].title}`;
-            document.getElementById('temp').innerText = `${temp}`;
+            if (cap != 0) document.getElementById('title').innerText = `Capítulo ${temp}X${data[temp][cap].capnumb} | ${data[temp][cap].title}`;
+            else document.getElementById('title').innerText = "You'Ve Been Rick-Rolled";
 
              var innerDiv = document.querySelector('.player');
 
@@ -42,6 +41,8 @@ function leerJSON() {
         })
         .catch(error => {
             console.error('Error:', error);
+            var errorText = document.createElement('h4');
+            errorText.innerText = "Ocurrió un Error inesperado!"
         });
 }
 
