@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://los-simuladores.bringfeel.com.ar/assets/img/los-simuladoresLogo-256.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/css/reproductor/main.css">
+    <link rel="stylesheet" href="./assets/css/reproductor/ads.css">
+    <title>Los Simuladores • Reproductor</title>
+</head>
+<body>
+    <!-- Anuncio vertical lateral -->
+    <div class="ad-space ad-vertical-left">
+        Espacio para<br>
+        Anuncio Vertical<br>
+        160x600
+    </div>
+
+    <div class="ad-space ad-vertical-right">
+        Espacio para<br>
+        Anuncio Vertical<br>
+        160x600
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <a href="https://los-simuladores.bringfeel.com.ar" class="logo">LOS SIMULADORES</a>
+            <nav class="nav-links">
+                <a href="https://los-simuladores.bringfeel.com.ar">Menú</a>
+                <a href="#episodios">Episodios</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+
+            <!-- Video Player Section -->
+            <section class="video-section">
+                <div class="video-container">
+                    <div class="video-placeholder">
+                        <button class="play-button" onclick="playEpisode()">▶</button>
+                        <div>Selecciona un capítulo para reproducir</div>
+                    </div>
+                </div>
+
+                <div class="current-episode">
+                    <h2 class="episode-title" id="currentTitle">Selecciona un episodio</h2>
+                    <div class="episode-info" id="currentInfo">Temporada • Episodio • Duración</div>
+                </div>
+
+                <div class="episode-description" id="currentDescription">
+                    Selecciona un episodio de la lista para comenzar a ver Los Simuladores.
+                </div>
+
+                <div class="video-controls">
+                    <button class="control-btn" onclick="previousEpisode()" id="prevBtn" disabled>⏮ Anterior</button>
+                    <button class="control-btn" onclick="nextEpisode()" id="nextBtn" disabled>Siguiente ⏭</button>
+                </div>
+            </section>
+
+            <!-- Season Tabs -->
+            <div class="season-tabs">
+                <button class="season-tab" onclick="showSeason(1, this)">Temporada 1</button>
+                <button class="season-tab" onclick="showSeason(2, this)">Temporada 2</button>
+            </div>
+
+            <!-- Episodes Section -->
+            <section class="episodes-section" id="episodios">
+                <div class="episodes-grid" id="episodesGrid">
+                    <!-- Episodes will be populated by JavaScript -->
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-text">
+            🚬 Los Simuladores & BringFeel ❤️
+        </div>
+    </footer>
+</body>
+<script src="./assets/js/reproductor/main.js"></script>
+</html>

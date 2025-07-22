@@ -1,0 +1,27 @@
+    @page { size: 8.27in 11.69in; margin: 0.79in }
+		p { line-height: 115%; margin-bottom: 0.1in; background: transparent }
+		pre { background: transparent }
+		pre.western { font-family: "Liberation Mono", monospace; font-size: 10pt }
+		pre.cjk { font-family: "NSimSun", monospace; font-size: 10pt }
+		pre.ctl { font-family: "Liberation Mono", monospace; font-size: 10pt }
+
+    body {
+      background-color: #121212;
+      color: white;
+    }
+
+    a:link {
+      color: rgb(0, 255, 255);
+    }
+
+    a:visited {
+      color: green;
+    }
+
+    a:hover {
+      color: rgba(146, 221, 221, 0.651);
+    }
+
+    a:active {
+      color: rgb(0, 199, 27);
+    }

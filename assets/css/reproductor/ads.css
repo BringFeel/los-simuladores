@@ -1,0 +1,29 @@
+        .ad-space {
+            background-color: #1a1a1a;
+            border: 2px dashed #333;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .ad-vertical-right {
+            width: 160px;
+            height: 600px;
+            position: fixed;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+        }
+
+        .ad-vertical-left {
+            width: 160px;
+            height: 600px;
+            position: fixed;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+        }
