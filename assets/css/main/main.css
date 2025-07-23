@@ -87,7 +87,7 @@
             text-align: center;
             color: #666;
             font-size: 0.9rem;
-            box-sizing: content-box;
+            box-sizing: content-box; /* Iframes Chotos */
         }
 
         .ad-horizontal {
