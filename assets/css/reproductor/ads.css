@@ -1,11 +1,12 @@
         .ad-space {
             background-color: #1a1a1a;
             border: 2px dashed #333;
-            padding: 20px;
+            padding: 10px;
             margin: 20px 0;
             text-align: center;
             color: #666;
             font-size: 0.9rem;
+            box-sizing: content-box;
         }
 
         .ad-vertical-right {
